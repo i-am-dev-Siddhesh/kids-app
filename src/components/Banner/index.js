@@ -33,7 +33,19 @@ export const Banner = () => {
                     );
                 })}
             </div>
-            <div className={styles.secondSection}></div>
+            <div className={styles.footerSectionParent}>
+                <div className={styles.sentence}>
+                    <p style={{ color: "#3497A7" }}>Sentence 4/6</p>
+                </div>
+                <div className={styles.footerSectionBox}>
+                    <div className={styles.innerSection}>
+                        <p style={{ color: "#3497A7", marginTop: "40px" }}>
+                            A <div className={styles.answerBox}>d</div> of
+                            unwashed bedsheets lay in the dark room.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
