@@ -44,7 +44,17 @@ export const Banner = () => {
                                 top: index % 2 === 0 ? "-70px" : "0px",
                             }}
                         >
-                            <Bubble text={item} onClick={onClick} />
+                            <Bubble
+                                text={item}
+                                onClick={onClick}
+                                fill={
+                                    item === selectedAnswer
+                                        ? item === rightAnswer
+                                            ? "rgba(144, 233, 0, 0.75)"
+                                            : "rgba(255, 0, 0, 0.71)"
+                                        : "white"
+                                }
+                            />
                         </span>
                     );
                 })}

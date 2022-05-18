@@ -37,7 +37,7 @@
     box-shadow: inset 0px 3px 0px #91f0ff;
     border-radius: 14.5px;
     width: 320px;
-    min-height: 41px;
+    height: 40px;
     transform: translateY(50%);
     display: flex;
     justify-content: center;
