@@ -2,44 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.firstSection,
-.secondSection {
-    display: flex;
-    justify-content: center;
-    width: 48%;
-}
-
-.firstSection {
-    flex-direction: column;
-    width: 300px;
-}
-.questionBox {
-    width: 380px;
-    min-height: 250px;
-    background: #ff9c00;
-    border: 1.5px solid #d56400;
-    border-radius: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-}
-.questionNumber {
-    width: 320px;
-    height: 49px;
-    background: #ffffff;
-    border: 2px solid #d56400;
-    box-shadow: inset 0px 3px 0px #ffe691;
-    border-radius: 2rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transform: translateY(50%);
-}
-.questionNumber p {
-    color: #ef7000 !important;
-    font-size: 20px;
+    height: 20rem;
+    width: 100%;
 }
