@@ -1,11 +1,27 @@
+import { useState } from "react";
 import { Bubble } from "../../svgs/Bubble";
 import styles from "./banner.module.css";
 
 export const Banner = () => {
+    const rightAnswer = "flock";
+
+    const [selectedAnswer, setSelectedAnswer] = useState();
     const arr = ["flock", "herd", "circle", "pile", "clump", "army"];
 
     const onClick = (text) => {
         console.log("text", text);
+        setSelectedAnswer(text);
+    };
+
+    const successFullAnswerCss = {
+        background: "#5EBE00",
+        border: "1px solid #478F00",
+        boxShadow: "inset 0px 2px 0px #88ED39",
+    };
+    const errorAnswerCss = {
+        background: "#D40000",
+        border: " 1px solid #950000",
+        boxShadow: "inset 0px 2px 0px #FF9191",
     };
     return (
         <div className={styles.bannerParent}>
@@ -39,9 +55,26 @@ export const Banner = () => {
                 </div>
                 <div className={styles.footerSectionBox}>
                     <div className={styles.innerSection}>
-                        <p style={{ color: "#3497A7", marginTop: "40px" }}>
-                            A <div className={styles.answerBox}>d</div> of
-                            unwashed bedsheets lay in the dark room.
+                        <p
+                            style={{
+                                color: "#3497A7",
+                                marginTop: "40px",
+                            }}
+                        >
+                            A{" "}
+                            <span
+                                className={styles.answerBox}
+                                style={
+                                    selectedAnswer
+                                        ? selectedAnswer === rightAnswer
+                                            ? successFullAnswerCss
+                                            : errorAnswerCss
+                                        : {}
+                                }
+                            >
+                                {selectedAnswer}
+                            </span>{" "}
+                            of unwashed bedsheets lay in the dark room.
                         </p>
                     </div>
                 </div>
