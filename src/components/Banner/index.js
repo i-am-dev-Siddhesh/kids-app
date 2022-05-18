@@ -9,7 +9,6 @@ export const Banner = () => {
     const arr = ["flock", "herd", "circle", "pile", "clump", "army"];
 
     const onClick = (text) => {
-        console.log("text", text);
         setSelectedAnswer(text);
     };
 
