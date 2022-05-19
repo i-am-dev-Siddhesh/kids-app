@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Bubble } from "../../svgs/Bubble";
+import { NextBtn } from "../../svgs/Btns";
 import styles from "./banner.module.css";
 
 export const Banner = () => {
@@ -21,6 +22,10 @@ export const Banner = () => {
         background: "#D40000",
         border: " 1px solid #950000",
         boxShadow: "inset 0px 2px 0px #FF9191",
+    };
+    const alertCall = () => {
+        alert("Under construction");
+        return;
     };
     return (
         <div className={styles.bannerParent}>
@@ -87,6 +92,9 @@ export const Banner = () => {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className={styles.nextBtn} onClick={alertCall}>
+                <NextBtn />
             </div>
         </div>
     );
