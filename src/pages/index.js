@@ -10,7 +10,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
                 <style>
                     @import
-                    url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Hurricane&display=swap');
+                    url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600`&rsquo;`family=Hurricane`&rsquo;`display=swap');
                 </style>
             </Head>
 
