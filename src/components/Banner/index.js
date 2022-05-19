@@ -73,6 +73,8 @@ export const Banner = () => {
                             style={{
                                 color: "#3497A7",
                                 marginTop: "40px",
+                                display: "flex",
+                                alignItems: "center",
                             }}
                         >
                             A{" "}
@@ -86,7 +88,13 @@ export const Banner = () => {
                                         : {}
                                 }
                             >
-                                {selectedAnswer}
+                                <span
+                                    style={{
+                                        marginTop: "-3px",
+                                    }}
+                                >
+                                    {selectedAnswer}
+                                </span>
                             </span>{" "}
                             of unwashed bedsheets lay in the dark room.
                         </p>
