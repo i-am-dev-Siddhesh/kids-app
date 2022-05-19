@@ -13,9 +13,9 @@ export const Bubble = ({
             xmlns="http://www.w3.org/2000/svg"
         >
             <circle
-                cx="29"
-                cy="29"
-                r="29"
+                cx="30"
+                cy="30"
+                r="30"
                 fill={fill}
                 onClick={() => onClick(text)}
                 fillOpacity={fill === "white" ? "0.5" : "1"}
@@ -31,19 +31,18 @@ export const Bubble = ({
                 fill={fill}
                 fillOpacity={fill === "white" ? "0.5" : "1"}
             />
-            <a
+            <text
+                x="40%"
+                y="45%"
+                textAnchor="middle"
+                stroke={textColor}
+                strokeWidth="2px"
+                letterSpacing="1"
                 onClick={() => onClick(text)}
-                style={{
-                    cursor: "pointer",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                }}
+                cursor="pointer"
             >
-                <text x="12" y="34" fill={textColor}>
-                    {text}
-                </text>
-            </a>
+                {text}
+            </text>
         </svg>
     );
 };

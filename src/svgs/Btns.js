@@ -203,7 +203,7 @@ export const NextBtn = () => {
                     border: "1.5px solid #367B00",
                 }}
             >
-                <text x="24" y="26" fill="white">
+                <text x="20" y="26" fill="white">
                     Next
                 </text>
             </a>
